@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+
+{% block title %} Post Delete {% endblock %}
+
+{% block content %}
+<form method="POST" class="my-class">
+
+    {% csrf_token %}
+
+    <input type="submit" value="Delete">
+  </form> 
+
+{% endblock %}
